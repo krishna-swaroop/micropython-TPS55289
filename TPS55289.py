@@ -34,9 +34,6 @@ _TPS55289_CDC_ADDR              = const(0x05)   # Cable Compensation Setting Reg
 _TPS55289_MODE_ADDR             = const(0x06)   # Mode Control Register Address
 _TPS55289_STATUS_ADDR           = const(0x07)   # Operating Status Register Address
 
-SUCCESS                         = const(1)
-FAIL                            = const(0)
-
 # Constants
 _INTFB_00                       = const(0.2256) # 2.5mV Step
 _INTFB_01                       = const(0.1128) # 5mV Step
@@ -155,7 +152,7 @@ class TPS55289():
         # Check if Output Voltage Selected is valid
         if (voltage >= 0.8) & (voltage <= 22) == 0:
             print("Requested Output Voltage is out of bounds\n")
-            return FAIL
+            pass
         # Disabling output before setting new output voltage
         #self.disable()
         # Figure out what bits need to be set for
