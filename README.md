@@ -26,7 +26,7 @@ Product Page: https://www.ti.com/product/TPS55289
 - [ ] Release 1.0
 
 Please note that this project currently is just to keep track of development. The code hasn't been tested as of this
-point. I will keep this repository updated with regards to bugs. Let me know if anyone has had a chance to test this out using the Evaluation Kit and RPi Pico!
+point. I will keep this repository updated with regards to bugs. Let me know if anyone has had a chance to test this out using the Evaluation Kit(TPS55289EVM) and Raspberry Pico!
 
 ## Usage
 
